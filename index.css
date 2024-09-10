@@ -1,0 +1,159 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7f848a;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+#logo-name{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: column;
+   
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+header img {
+    vertical-align: middle;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-top: 10px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    
+    
+}
+
+header nav a:hover {
+    /* text-decoration: underline; */
+    color: #205fc5;
+}
+
+/* Marquee */
+marquee {
+    color: #525708;
+    font-weight: bold;
+}
+#Intro1{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+
+}
+/* Sections styling */
+section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 2rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #333;
+}
+
+/* Lists */
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+ul li {
+    padding: 5px 0;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #007bff;
+    color: white;
+}
+
+table td {
+    background-color: #f9f9f9;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+footer nav a {
+    color: #fffb00;
+    text-decoration: none;
+    margin: 10px 5px;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+}
+
+/* Pseudo-elements and Pseudo-classes */
+footer p {
+    margin-top: 10px;
+}
+
+header nav a:active {
+    color: #ff5722;
+}
+
+/* Pseudo-element to add an icon before each list item */
+ul li::before {
+    content: "✔️";
+    margin-right: 10px;
+    color: #007bff;
+}
